@@ -8,8 +8,8 @@ class Login extends Component {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginLeft: 50, marginRight: 50 }}>
         <Text style={{ fontWeight: 'bold', fontSize: 20, marginBottom: 30 }}>Login</Text>
-        <Text style={{ fontSize: 15, marginBottom: 30 }}>Welcome to the N-back and Stop Signal Tasks.</Text>
-        <Text style={{ fontSize: 15, marginBottom: 30 }}>Please enter the following information as indicated on your form.</Text>
+        <Text style={{ fontSize: 15, marginBottom: 30, textAlign: 'center' }}>Welcome to the N-back and Stop Signal Tasks.</Text>
+        <Text style={{ fontSize: 15, marginBottom: 30, textAlign: 'center' }}>Please enter the following information as indicated on your form.</Text>
         <FormInput
                autoCorrect={false}
                containerStyle={{ width: 200, borderColor: '#000', marginBottom: 30 }}

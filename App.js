@@ -16,10 +16,29 @@ import Question3a from './src/QuestionFlow/Question3a';
 import Question3b from './src/QuestionFlow/Question3b';
 import Reminder from './src/QuestionFlow/Reminder';
 import Reminder2 from './src/QuestionFlow/Reminder2';
+import Instruction from './src/NInstructionFlow/Instruction.js';
+import Instruction1 from './src/NInstructionFlow/Instruction1.js';
+import Instruction2 from './src/NInstructionFlow/Instruction2.js';
+import Instruction3 from './src/NInstructionFlow/Instruction3.js';
+import Instruction4 from './src/NInstructionFlow/Instruction4.js';
+import Instruction5 from './src/NInstructionFlow/Instruction5.js';
+import Practice1 from './src/NBackPractice/Practice1.js';
+import NBackPractice from './src/NBackPractice/NBackPractice.js';
 
 export default class App extends React.Component {
   render() {
     const MainNavigator = TabNavigator({
+      NInstruction: { screen: StackNavigator({
+        Instruction: {screen: Instruction},
+        Instruction1: {screen: Instruction1},
+        Instruction2: {screen: Instruction2},
+        Instruction3: {screen: Instruction3},
+        Instruction4: {screen: Instruction4},
+        Instruction5: {screen: Instruction5},
+        Practice1: {screen: Practice1},
+        NBackPractice: {screen: NBackPractice}
+      })
+    },
       Login: { screen: Login },
       HomeFlow: { screen: TabNavigator({
         MainHome: { screen: StackNavigator({
